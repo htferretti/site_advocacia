@@ -1,0 +1,21 @@
+* {
+    color: #fff;
+}
+
+.text-roman {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#start .row {
+    background: #ADD8E6;
+}
+
+#start button {
+    width: 400px;
+    background: #4682B4;
+    border: none;
+}
+
+#start button:hover {
+    background: #5F9EA0;
+}
