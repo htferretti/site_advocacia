@@ -9,19 +9,20 @@
 }
 
 #intro {
-    background: #ADD8E6;
+    background: #191970;
     color: #fff;
 }
 
 #intro a {
     width: 400px;
     background: #4682B4;
-    border: none;
+    border: 2px solid transparent;
     margin-bottom: 100px;
 }
 
 #intro a:hover {
-    background: #5F9EA0;
+    border: 2px solid #fff;
+    background: transparent;
 }
 
 #intro h2 {
@@ -65,7 +66,7 @@
 #servicos aside button, #servicos aside a {
     height: 50px;
     font-size: 15px;
-    background: #ADD8E6;
+    background: #191970;
     color: #fff;
     border: none;
     display: flex;
@@ -74,15 +75,16 @@
 
 #servicos aside button.active {
     background: #4682B4;
+    cursor:auto;
 }
 
 #servicos aside button:hover, #servicos aside a:hover {
-    background: #5F9EA0;
+    background: #4682B4;
 }
 
 #servicos .tab-content {
     padding: 30px;
-    border-left: #ADD8E6 solid 2px;
+    border-left: #4682B4 solid 2px;
     color: #6C757D;
 }
 
@@ -118,7 +120,7 @@
 }
 
 #footer a:hover {
-    color: #5F9EA0;
+    color: #191970;
 }
 
 @media screen and (max-width: 1200px) {
