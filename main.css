@@ -1,51 +1,192 @@
 * {
-    color: #fff;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .text-roman {
     font-family: 'Times New Roman', Times, serif;
 }
 
-#start {
+#intro {
     background: #ADD8E6;
+    color: #fff;
 }
 
-#start a {
+#intro a {
     width: 400px;
     background: #4682B4;
     border: none;
+    margin-bottom: 100px;
 }
 
-#start a:hover {
+#intro a:hover {
     background: #5F9EA0;
 }
 
-#start h2 {
+#intro h2 {
     margin: 60px 0;
 }
 
-#start h1, #start h4, #start a {
+#intro h1, #intro h4 {
     margin-bottom: 30px;
 }
 
+
+
+#sobre {
+    color: #6C757D;
+}
+
+#sobre h2, #sobre h6 {
+    color: #4682B4;
+}
+
+#sobre img {
+    width: 100%;
+    position: relative;
+    top: -60px;
+}
+
+#sobre #img1, #sobre #p1 {
+    display: block;
+}
+#sobre #img2, #sobre #p2 {
+    display: none;
+}
+
+
+
+#servicos {
+    margin-bottom: 50px;
+}
+
+
+#servicos aside button, #servicos aside a {
+    height: 50px;
+    font-size: 15px;
+    background: #ADD8E6;
+    color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+#servicos aside button.active {
+    background: #4682B4;
+}
+
+#servicos aside button:hover, #servicos aside a:hover {
+    background: #5F9EA0;
+}
+
+#servicos .tab-content {
+    padding: 30px;
+    border-left: #ADD8E6 solid 2px;
+    color: #6C757D;
+}
+
+#servicos .tab-content h5, #servicos .tab-content h6 {
+    color: #4682B4;
+}
+
+
+
+#footer {
+    background: #6C757D;
+    color: #fff;
+    padding-top: 50px;
+}
+
+#footer > div {
+    text-align: center;
+}
+
+#footer #contato a {
+    display: block;
+}
+
+#footer .col-12 {
+    margin-top: 30px;
+}
+
+#footer a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .1s;
+}
+
+#footer a:hover {
+    color: #5F9EA0;
+}
+
 @media screen and (max-width: 1200px) {
-    #start h1 {
+    #intro h1 {
         font-size: 35px;
+    }
+
+    #intro a {
+        margin-bottom: 70px;
+    }
+
+    #sobre img {
+        top: -30px;
+    }
+
+    #sobre #img1 {
+        display: none;
+    }
+    #sobre #img2 {
+        display: block;
     }
 }
 
-@media screen and (max-width: 750px) {
-    #start h1 {
+@media screen and (max-width: 1000px) {
+    #sobre #img1, #sobre #p2 {
+        display: block;
+    }
+    #sobre #img2, #sobre #p1 {
+        display: none;
+    }
+
+    #servicos {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #intro h1 {
         font-size: 25px;
     }
 
-    #start h4 {
+    #intro h4 {
         font-size: 22px;
     }
 
-    #start a {
+    #intro a {
         width: 300px;
         font-size: 15px;
         padding: 15px 0 !important;
     }
+
+    #sobre #p1 {
+        display: block;
+    }
+    #sobre #p2 {
+        display: none;
+    }
+
+    #servicos {
+        padding-top: 0px;
+    }
+
+    #servicos .tab-content {
+        border-left: none;
+    }
+
+    #footer .col-md-4 {
+        margin-bottom: 40px;
+    }
+    
 }
